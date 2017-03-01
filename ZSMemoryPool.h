@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _ZSMEMORY_H_
+#define _ZSMEMORY_H_
+#include <stdio.h>
 /*!
  * \file ZSMemoryPool.h
  *
@@ -98,4 +100,4 @@ private:
 	size_t use_mem;			//已经使用总内存
 
 };
-
+#endif
