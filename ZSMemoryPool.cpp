@@ -125,7 +125,7 @@ int ZSMemoryPool::ZSDestroy()
 	{
 		tmp = pPre->pNext;
 		if (pPre->buf != nullptr)
-			delete[] pPre->buf;
+			delete[] (char*)pPre->buf;
 		delete pPre;
 		pPre = tmp;
 	}
